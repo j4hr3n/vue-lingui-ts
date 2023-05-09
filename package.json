@@ -1,0 +1,32 @@
+{
+  "name": "vue-lingui",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check build-only",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --noEmit",
+    "i18n:extract": "lingui extract",
+    "i18n:compile": "lingui compile"
+  },
+  "dependencies": {
+    "@lingui/core": "^4.0.0",
+    "vue": "^3.2.47",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@lingui/extractor-vue": "^4.0.0",
+    "@lingui/cli": "^4.0.0",
+    "@lingui/conf": "^4.0.0",
+    "@tsconfig/node18": "^2.0.0",
+    "@types/node": "^18.16.3",
+    "@vitejs/plugin-vue": "^4.2.1",
+    "@vue/tsconfig": "^0.3.2",
+    "npm-run-all": "^4.1.5",
+    "typescript": "~5.0.4",
+    "vite": "^4.3.4",
+    "vue-tsc": "^1.6.4"
+  }
+}
